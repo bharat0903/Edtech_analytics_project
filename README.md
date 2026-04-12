@@ -1,7 +1,9 @@
 📊 EdTech User Acquisition & Funnel Conversion Analysis
+
 📌 Project Overview
 This project focuses on analysing user acquisition and funnel conversion behaviour for an EdTech platform using transactional and engagement data to uncover actionable business insights. The analysis aims to help stakeholders understand which channels and geographies drive the highest-quality users, where the conversion funnel loses potential students, and how to optimise marketing and product strategies to improve enrolment rates and revenue.
 The project follows an end-to-end data analytics workflow, covering data merging and cleaning, exploratory analysis, SQL-based business queries, and interactive dashboarding.
+
 🎯 Business Objectives
 
 Identify and quantify drop-off at each stage of the user acquisition funnel
@@ -11,9 +13,11 @@ Assess revenue performance including total revenue and average order value
 Understand device and demographic distribution to inform product and marketing decisions
 Generate insights to support marketing budget allocation, geographic expansion, and product optimisation
 
+
 🗂 Dataset Description
 Total Records: 1,500 registered users; 225 paid enrolments
 Total Columns: 16 across three relational tables
+
 Data Includes:
 
 User demographics (age, city, device type)
@@ -21,11 +25,13 @@ Acquisition channel (Instagram, YouTube, Referral, Google Ads, Website)
 Engagement indicators (course viewed flag, demo attended flag)
 Enrolment details (enrolment date, course ID, amount paid)
 
+
 Data Quality Issues Addressed:
 
 Null values in engagement flag columns filled with 0 for accurate funnel counts
 Three tables joined on user_id using LEFT JOINs to preserve all registered users
 Boolean enrolled flag derived from enrollment_date for downstream analysis
+
 
 🛠 Tools & Technologies Used
 
@@ -38,6 +44,7 @@ Libraries: Pandas, Matplotlib
 SQL (Google BigQuery): Business queries and funnel aggregations
 Power BI: Interactive dashboards and KPI tracking
 Git & GitHub: Version control and project documentation
+
 
 🔄 Project Workflow
 Data Understanding & Cleaning
@@ -66,6 +73,7 @@ Channel and city performance comparisons
 Revenue and demographic KPI cards
 Device distribution breakdown for product prioritisation
 
+
 📈 Key Insights
 
 The View-to-Demo stage is the largest funnel bottleneck, with only 44.8% of course viewers proceeding to attend a demo
@@ -75,6 +83,7 @@ Hyderabad has the lowest enrolment conversion rate (11.2%) despite near-average 
 Android accounts for 52.7% of the user base, making mobile-first optimisation a priority
 The platform generated INR 11,07,775 in total revenue from 225 paid enrolments, with an average order value of INR 4,923
 
+
 💡 Business Recommendations
 
 Implement automated follow-up sequences (WhatsApp / email) for users who view a course but do not book a demo, targeting the View-to-Demo bottleneck
@@ -83,6 +92,7 @@ Prioritise Android app performance to serve the majority device segment effectiv
 Conduct a cohort-level investigation into Hyderabad to diagnose the cause of its below-average conversion rate
 Scale the Website / organic channel through SEO and content marketing to grow the highest-converting user source
 Benchmark acquisition cost against revenue per signup by channel once CAC data is available to guide budget reallocation
+
 
 📊 Dashboard Preview
 The Power BI dashboard provides an interactive view of:
